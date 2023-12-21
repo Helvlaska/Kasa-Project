@@ -2,10 +2,11 @@
 
 /****IMPORTATIONS****/
 //modèle = import "nomination compo" from './chemin'
+import Home from './Home'
 
 function App() {
     return <div>
-        
+        <Home />
     </div>
 }
 
