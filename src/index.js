@@ -1,17 +1,18 @@
+//fichier pour lier notre app React a notre HTML
+
+// les imports pour faire fonctionner l'app React
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//l'import pour appliquer le style général du site
+import './styles/index.scss';
+//l'import de tout les composants via le fichier App
+import App from './components/App';
 
+//on crée une constante pour pointer l'élément HTML sur lequel on va fixer l'app React
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//on dit que sur l'élément HTML 'root' on veut renvoyer tout les composants de App
