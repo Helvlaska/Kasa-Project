@@ -1,3 +1,4 @@
+//Layout
 .Kasa_Header{
     display: flex;
     width: 1240px;
@@ -5,4 +6,10 @@
     justify-content: center;
     align-items: center;
     gap: 720.678px;
+}
+//Logo
+.Kasa_Logo{
+    width: 210.322px;
+    height: 68px;
+    flex-shrink: 0;
 }
