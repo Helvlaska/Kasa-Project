@@ -1,0 +1,34 @@
+.Gallery_Thumb{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    display: flex;
+    align-items: flex-end;
+    flex-shrink: 0;
+    background-color: #FF6060;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.Gallery_Thumb_Filter{
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+    border-radius: 10px;
+    opacity: 50%;
+    z-index: 3;
+}
+
+.Gallery_Thumb_Txt{
+    position: absolute;
+    width: 300px;
+    color: #FFF;
+    margin: 20px,0px,20px,20px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.668px;
+    z-index: 4;
+}
