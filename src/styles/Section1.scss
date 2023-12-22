@@ -1,5 +1,6 @@
 //Layout
 .Kasa_Section1{
+    position: relative;
     width: 1240px;
     height: 223px;
     flex-shrink: 0;
@@ -7,4 +8,35 @@
 //Image
 .Kasa_Section1_img{
     border-radius: 25px;
+    z-index: 2;
+}
+//Filter
+.Kasa_Section1_Filter{
+    position: absolute;
+    top: 0;
+    width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    opacity: 0.3;
+    background: #000;
+    mix-blend-mode: darken;
+    z-index: 3;
+}
+//Texte
+.Kasa_Section1_Txt{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 1240px;
+    height: 223px;
+    margin: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 68.448px; 
+    z-index: 4;
 }
