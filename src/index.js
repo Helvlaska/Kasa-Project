@@ -8,6 +8,7 @@ import './styles/index.scss';
 //l'import de tout les composants via le fichier App
 import App from './components/App';
 
+
 //on crée une constante pour pointer l'élément HTML sur lequel on va fixer l'app React
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

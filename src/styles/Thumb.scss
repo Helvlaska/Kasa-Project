@@ -5,9 +5,17 @@
     display: flex;
     align-items: flex-end;
     flex-shrink: 0;
+    margin-bottom: 50px;
     background-color: #FF6060;
     border-radius: 10px;
     z-index: 2;
+}
+
+.Gallery_Thumb_Img{
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0;
+    border-radius: 10px;
 }
 
 .Gallery_Thumb_Filter{
@@ -21,10 +29,12 @@
 }
 
 .Gallery_Thumb_Txt{
+    display: flex;
     position: absolute;
     width: 300px;
     color: #FFF;
     margin: 20px,0px,20px,20px;
+    margin-inline-start: 20px;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
