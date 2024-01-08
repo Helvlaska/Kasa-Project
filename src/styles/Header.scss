@@ -1,11 +1,10 @@
 //Layout
 .Kasa_Header{
     display: flex;
+    justify-content: space-between;
     width: 1240px;
     height: 68px;
-    justify-content: center;
-    align-items: center;
-    gap: 720.678px;
+    margin : 50px 100px 0px 100px;
 }
 //Logo
 .Kasa_Logo{

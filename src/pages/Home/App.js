@@ -1,9 +1,8 @@
-// fichier qui regroupe tout les composants
+// fichier de construction de pages
 
 /****IMPORTATIONS****/
 //modèle = import "nomination compo" from './chemin'
-import Home from './Home'
-
+import Home from '../../components/Home'
 
 function App() {
     

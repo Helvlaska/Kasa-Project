@@ -33,8 +33,9 @@
     position: absolute;
     width: 300px;
     color: #FFF;
-    margin: 20px,0px,20px,20px;
     margin-inline-start: 20px;
+    margin-block-start: 0px;
+    margin-block-end: 20px;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
