@@ -1,6 +1,6 @@
 /****IMPORTATIONS****/
 import '../styles/Thumb.scss'
-import Api from '../Api.json'
+import Api from '../ApiLocation.json'
 console.log(Api);
 const firstItem = Api[0];
 console.log('title', firstItem.title)

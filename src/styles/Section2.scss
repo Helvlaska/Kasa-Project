@@ -1,0 +1,24 @@
+//Layout
+.Kasa_Section2{
+    position: relative;
+    width: 1240px;
+    height: 223px;
+    flex-shrink: 0;
+}
+//Image
+.Kasa_Section2_img{
+    border-radius: 25px;
+    z-index: 2;
+}
+//Filter
+.Kasa_Section2_Filter{
+    position: absolute;
+    top: 0;
+    width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    opacity: 0.3;
+    background: #000;
+    mix-blend-mode: darken;
+    z-index: 3;
+}

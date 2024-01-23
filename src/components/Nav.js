@@ -6,7 +6,7 @@ function Nav(){
     return (
         <nav className='Kasa_Nav'>
             <Link className='Kasa_Nav_Txt' to="/">Accueil</Link>
-            <Link className='Kasa_Nav_Txt' to="/Test">A Propos</Link>
+            <Link className='Kasa_Nav_Txt' to="/aPropos">A Propos</Link>
         </nav>
     )
 }
