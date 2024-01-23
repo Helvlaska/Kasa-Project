@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom/client';
 //Les imports pour gérer les routes
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 //l'import pour appliquer le style général du site
+import './styles/Normalize.scss'
 import './styles/index.scss';
 //l'import des components pour construire les pages
 import Header from './components/Header';
