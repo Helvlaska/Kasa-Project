@@ -1,11 +1,11 @@
 /****IMPORTATIONS****/
 import '../styles/Thumb.scss'
 import Api from '../ApiLocation.json'
-console.log(Api);
+/*console.log(Api);
 const firstItem = Api[0];
 console.log('title', firstItem.title)
 const titles = Api.map(item => item.title)
-console.log('titles', titles)
+console.log('titles', titles)*/
 
 function Thumb(){
 

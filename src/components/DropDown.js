@@ -1,22 +1,42 @@
 /****IMPORTATIONS****/
 import '../styles/DropDown.scss'
-import Api from '../ApiTexte.json'
+//import Api from '../ApiTexte.json'
+import Arrow from '../assets/Arrow.svg'
 
-const title = Api.map(item => item.title)
-console.log('title', title)
-const text = Api.map(item => item.text)
-console.log('text', text)
+const TextContent = [
+    {
+        "Title": "Fiabilité",
+        "Content": "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
+    },
+    {
+        "Title": "Respect",
+        "Content": "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+    },
+    {
+        "Title": "Service",
+        "Content": "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
+    },
+    {
+        "Title": "Sécurité",
+        "Content": "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
+    }
+]
 
 function DropDown() {
-    return (<>
-        {Api.map(item => (
-                <ul key={item.title} className='DropDown_List'>
-                    <li className='DropDown_Item'>
-                        <h6 className='DropDown_Title'>{item.title}</h6>
-                        <p className='DropDown_Text'>{item.text}</p>
-                    </li>
-                </ul>
-            ))
-        }</>)  
+
+    function event(){console.log("l'event fonctionne")} 
+
+    return (
+        <ul className='DropDown_List'>
+            {TextContent.map((item, index) => (
+                <li key={`${item}-${index}`} className='DropDown_Item'>
+                    <div className='DropDown_Title'>
+                        <h6>{item.Title}</h6>
+                        <img src={Arrow} alt='Arrow' onClick={event} />
+                    </div>
+                    <p className='DropDown_Text'>{item.Content}</p>
+                </li>   
+            ))}
+        </ul>)  
 }
 export default DropDown

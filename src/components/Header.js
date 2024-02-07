@@ -1,6 +1,6 @@
 /****IMPORTATIONS****/
 import '../styles/Header.scss'
-import Logo from '../assets/Logo.svg'
+import Logo from '../assets/LogoPink.svg'
 import Nav from './Nav'
 
 function Header(){

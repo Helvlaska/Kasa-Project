@@ -12,7 +12,7 @@ import './styles/index.scss';
 import Header from './components/Header';
 import Home from './pages/Home/Home';
 import Propos from './pages/Home/Propos';
-
+import Footer from './components/Footer';
 
 //on crée une constante pour pointer l'élément HTML sur lequel on va fixer l'app React
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +24,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/aPropos" element={<Propos />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 );
