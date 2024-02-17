@@ -2,13 +2,14 @@
 
 /****IMPORTATIONS****/
 import '../../styles/Home.scss'
-import Section1 from '../../components/Section1'
-import Body from '../../components/Body'
+import '../../styles/Gallery.scss'
+import SectionImg from './SectionImg'
+import Gallery from './Gallery'
 
 function Home(){
     return <div className='Kasa_Home'>
-        <Section1 />
-        <Body />
+        <SectionImg />
+        <Gallery />
     </div>
 }
 

@@ -1,6 +1,6 @@
 import '../../styles/Propos.scss'
-import Section2 from '../../components/Section2'
-import DropDown from '../../components/DropDown'
+import Section2 from './Section2'
+import DropDown from './DropDown'
 function Propos(){
     return (
         <div className="Kasa_Propos">

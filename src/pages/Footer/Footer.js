@@ -1,6 +1,6 @@
 /****IMPORTATIONS****/
-import '../styles/Footer.scss'
-import Logo from '../assets/LogoWhite.svg'
+import '../../styles/Footer.scss'
+import Logo from '../../assets/LogoWhite.svg'
 //import Api from '../ApiTexte.json'
 
 function Footer(){

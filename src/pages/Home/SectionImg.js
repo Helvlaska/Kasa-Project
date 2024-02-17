@@ -1,6 +1,6 @@
 /****IMPORTATIONS****/
-import '../styles/Section1.scss'
-import Section1_img from '../assets/Section1_img.png'
+import '../../styles/Section1.scss'
+import Section1_img from '../../assets/Section1_img.png'
 
 function Section1(){
     return <div className='Kasa_Section1'>
