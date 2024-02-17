@@ -11,7 +11,8 @@ import './styles/index.scss';
 //l'import des components pour construire les pages
 import Header from './pages/Header/Header';
 import Home from './pages/Home/Home';
-import Propos from './pages/Propos.js/Propos';
+import Propos from './pages/Propos/Propos';
+import Logement from './pages/Logement/Logement'
 import Error from './pages/Error/Error'
 import Footer from './pages/Footer/Footer';
 
@@ -23,7 +24,8 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/aPropos" element={<Propos />} />
+        <Route path="/Propos" element={<Propos />} />
+        <Route path="/Logement" element={<Logement />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
