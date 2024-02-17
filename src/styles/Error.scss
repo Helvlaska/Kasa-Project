@@ -1,27 +1,22 @@
-.Error_Title {
+.Kaza_Error{
     font-family: Montserrat;
+    text-align: center;
+    letter-spacing: 0em;
+    color: #FF6060;
+}
+.Error_Title {
     font-size: 288px;
     font-weight: 700;
     line-height: 411px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #FF6060;
 }
 .Error_Content{
-    font-family: Montserrat;
     font-size: 36px;
     font-weight: 500;
     line-height: 51px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #FF6060;
 }
 .Error_Link{
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #FF6060;
 }
