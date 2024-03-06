@@ -5,6 +5,7 @@ function Logement(){
     return <div className='Kasa_Logement'>
         
         <MainContent />
+
     </div>
 }
 

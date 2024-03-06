@@ -25,7 +25,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Propos" element={<Propos />} />
-        <Route path="/Logement" element={<Logement />} />
+        <Route path="/Logement/:identifiant" element={<Logement />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
