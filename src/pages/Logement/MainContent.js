@@ -2,7 +2,23 @@ import React, { useEffect, useState } from 'react'; // Importation des hooks Rea
 import { useParams } from 'react-router-dom'; // Importation de useParams pour récupérer les paramètres d'URL
 import Api from '../ApiLogements.json' // Importation des données d'API
 import Arrow from '../../assets/Arrow.svg' // Importation de l'icône flèche
+import starEmpty from '../../assets/StarEmpty.png';
+import starFull from '../../assets/StarFull.png';
 import '../../styles/DropDown.scss' // Importation des styles CSS
+
+const StarRating = ({ rating }) => {
+    const stars = [];
+  
+    for (let i = 0; i < 5; i++) {
+      if (i < rating) {
+        stars.push(<img key={i} src={starFull} alt="Full Star" />);
+      } else {
+        stars.push(<img key={i} src={starEmpty} alt="Empty Star" />);
+      }
+    }
+  
+    return <div>{stars}</div>;
+  };
 
 function MainContent(){
 
@@ -10,7 +26,6 @@ function MainContent(){
     const [MainContentData, setMainContentData] = useState(null); // État pour stocker les données du logement
     
     const [dropDown, setDropDown] = useState({}); // État pour gérer l'état des éléments déroulants
-
     const startDropDown = (id) => { // Fonction pour ouvrir ou fermer un élément déroulant
         setDropDown(prevState => ({ ...prevState, [id]: !prevState[id] })); // Utilisation de la fonction setDropDown pour mettre à jour l'état avec l'inversion de la visibilité de l'élément spécifique
     }
@@ -45,6 +60,7 @@ function MainContent(){
             <p className='MainContent_People_Name'>{peopleInfo.nom}{peopleInfo.name}</p> {/* Nom du propriétaire */}
             <img src={peopleInfo.photo} alt='Propriétaire' className='MainContent_People_Picture' /> {/* Photo du propriétaire */}
         </div>
+        <StarRating rating={MainContentData.note} /> {/* Intégration du composant StarRating avec la note de l'appartement */}
         <div className='MainContent_Bloc_DropDown'> {/* Bloc pour les éléments déroulants */}
             <div className='DropDown_Item'> {/* Élément déroulant pour la description */}
                 <div className='DropDown_Title'> {/* Bloc titre de l'élément déroulant */}
