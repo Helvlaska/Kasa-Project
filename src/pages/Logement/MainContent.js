@@ -47,8 +47,6 @@ function MainContent(){
 
     return <div className='Kasa_MainContent'> {/* Conteneur principal */}
         <div className='MainContent_Bloc_Title'> {/* Bloc de titre */}
-            <h1 className="MainContent_Title">{MainContentData.title}</h1> {/* Affichage du titre du logement */}
-            <p className="MainContent_Lieu">{MainContentData.location}</p> {/* Affichage de l'emplacement du logement */}
             <ul className="MainContent_TagList"> {/* Liste des mots-clés */}
                 {/* Parcours et affichage des mots-clés */}
                 {TagList.map((item, Tag) => ( 
