@@ -43,13 +43,10 @@ function MainContent(){
       }
     
     const équipementsList = (MainContentData.équipements); // Liste des équipements du logement
-    const peopleInfo = (MainContentData.hôte); // Infos des propriétaires
+    
 
     return <div className='Kasa_MainContent'> {/* Conteneur principal */}
-        <div className='MainContent_Bloc_People'> {/* Bloc pour les informations sur les personnes */}
-            <p className='MainContent_People_Name'>{peopleInfo.nom}{peopleInfo.name}</p> {/* Nom du propriétaire */}
-            <img src={peopleInfo.photo} alt='Propriétaire' className='MainContent_People_Picture' /> {/* Photo du propriétaire */}
-        </div>
+        
         <StarRating rating={MainContentData.note} /> {/* Intégration du composant StarRating avec la note de l'appartement */}
         <div className='MainContent_Bloc_DropDown'> {/* Bloc pour les éléments déroulants */}
             <div className='DropDown_Item'> {/* Élément déroulant pour la description */}
