@@ -1,5 +1,5 @@
 //import Gallery from "./Gallery"
-import MainContent from "./MainContent"
+import MainContentDropDown from "./MainContent_DropDown"
 import MainContentTitle from "./MainContent_Title"
 import MainContentTag from "./MainContent_Tag"
 import MainContentPeople from "./MainContent_People"
@@ -11,7 +11,7 @@ function Logement(){
         <MainContentTag />
         <MainContentPeople />
         <MainContentStarNote />
-        <MainContent />
+        <MainContentDropDown />
 
     </div>
 }
