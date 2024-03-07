@@ -12,7 +12,7 @@ function Logement(){
         <MainContentPeople />
         <MainContentStarNote />
         <MainContentDropDown />
-
+        
     </div>
 }
 
