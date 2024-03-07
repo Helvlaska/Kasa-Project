@@ -2,23 +2,7 @@ import React, { useEffect, useState } from 'react'; // Importation des hooks Rea
 import { useParams } from 'react-router-dom'; // Importation de useParams pour récupérer les paramètres d'URL
 import Api from '../ApiLogements.json' // Importation des données d'API
 import Arrow from '../../assets/Arrow.svg' // Importation de l'icône flèche
-import starEmpty from '../../assets/StarEmpty.png';
-import starFull from '../../assets/StarFull.png';
 import '../../styles/DropDown.scss' // Importation des styles CSS
-
-const StarRating = ({ rating }) => {
-    const stars = [];
-  
-    for (let i = 0; i < 5; i++) {
-      if (i < rating) {
-        stars.push(<img key={i} src={starFull} alt="Full Star" />);
-      } else {
-        stars.push(<img key={i} src={starEmpty} alt="Empty Star" />);
-      }
-    }
-  
-    return <div>{stars}</div>;
-  };
 
 function MainContent(){
 
@@ -47,7 +31,7 @@ function MainContent(){
 
     return <div className='Kasa_MainContent'> {/* Conteneur principal */}
         
-        <StarRating rating={MainContentData.note} /> {/* Intégration du composant StarRating avec la note de l'appartement */}
+        
         <div className='MainContent_Bloc_DropDown'> {/* Bloc pour les éléments déroulants */}
             <div className='DropDown_Item'> {/* Élément déroulant pour la description */}
                 <div className='DropDown_Title'> {/* Bloc titre de l'élément déroulant */}
