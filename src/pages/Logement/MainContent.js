@@ -41,19 +41,11 @@ function MainContent(){
       if (!MainContentData) { // Si les données du logement ne sont pas chargées
         return <div>Loading...</div>; // Affichage d'un message de chargement
       }
-    const TagList = (MainContentData["Mots clés"]); // Liste des mots-clés du logement
+    
     const équipementsList = (MainContentData.équipements); // Liste des équipements du logement
     const peopleInfo = (MainContentData.hôte); // Infos des propriétaires
 
     return <div className='Kasa_MainContent'> {/* Conteneur principal */}
-        <div className='MainContent_Bloc_Title'> {/* Bloc de titre */}
-            <ul className="MainContent_TagList"> {/* Liste des mots-clés */}
-                {/* Parcours et affichage des mots-clés */}
-                {TagList.map((item, Tag) => ( 
-                    <li key={`${item}-${Tag}`}className='MainContent_Tag'>{item}</li> 
-                ))}
-            </ul>
-        </div>
         <div className='MainContent_Bloc_People'> {/* Bloc pour les informations sur les personnes */}
             <p className='MainContent_People_Name'>{peopleInfo.nom}{peopleInfo.name}</p> {/* Nom du propriétaire */}
             <img src={peopleInfo.photo} alt='Propriétaire' className='MainContent_People_Picture' /> {/* Photo du propriétaire */}
