@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'; // Importation des hooks React nécessaires
 import { useParams } from 'react-router-dom'; // Importation de useParams pour récupérer les paramètres d'URL
 import Api from '../ApiLogements.json' // Importation des données d'API
+import '../../styles/MainContent_People.scss' // Importation des styles CSS
 
 function MainContentPeople(){
 
@@ -21,7 +22,7 @@ function MainContentPeople(){
     
     const peopleInfo = (MainContentData.hôte); // Infos des propriétaires
 
-    return <div className='MainContent_Bloc_People'> {/* Bloc pour les informations sur les personnes */}
+    return <div className='MainContent_People'> {/* Bloc pour les informations sur les personnes */}
         <p className='MainContent_People_Name'>{peopleInfo.nom}{peopleInfo.name}</p> {/* Nom du propriétaire */}
         <img src={peopleInfo.photo} alt='Propriétaire' className='MainContent_People_Picture' /> {/* Photo du propriétaire */}
     </div>

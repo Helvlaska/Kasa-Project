@@ -1,0 +1,22 @@
+.MainContent_People {
+    display: flex;
+}
+.MainContent_People_Name {
+    width: 9%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FF6060;
+}
+.MainContent_People_Picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+}
