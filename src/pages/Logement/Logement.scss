@@ -1,0 +1,70 @@
+.Kasa_Logement{
+    font-family: Montserrat;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF6060;
+    .Logement_Title {
+        display: flex;
+        justify-content: space-between;
+        .Logement_Title_Tag {
+            margin-bottom: 20px;
+            .MainContent_Title {
+                margin-bottom: 20px;
+                .MainContent_Title_Title {
+                    font-size: 36px;
+                    font-weight: 500;
+                    line-height: 51px;
+                    .MainContent_Title_Lieu {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 26px;
+                    }
+                }
+            }
+            .MainContent_TagList {
+                display: flex;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                text-align: center;
+                gap: 10px;
+                .MainContent_TagList_Tag {
+                    background: #FF6060;
+                    color: #FFFFFF;
+                    border-radius: 10px;
+                    padding: 2px 25px;
+                }
+            }
+        }
+        .Logement_Title_People {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .MainContent_People {
+                display: flex;
+                width: min-content;
+                gap: 15px;
+                .MainContent_People_Name {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 26px;
+                    text-align: right;
+                }
+                .MainContent_People_Picture {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    background-color: #C4C4C4;
+                }
+            }
+            .MainContent_StarNote {
+                .StarNote_Star {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

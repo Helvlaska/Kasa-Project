@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'; // Importation des hooks React nécessaires
 import { useParams } from 'react-router-dom'; // Importation de useParams pour récupérer les paramètres d'URL
 import Api from '../ApiLogements.json' // Importation des données d'API
-import '../../styles/MainContent_Title.scss' // Importation des styles CSS
+
 
 function MainContentTitle(){
 

@@ -9,9 +9,9 @@ const StarRating = ({ note }) => {
   
     for (let i = 0; i < 5; i++) { // i égal à 0, continue tant que i est inférieur à 5, et incrémente i de 1 à chaque itération.
       if (i < note) { // Si l'indice de l'étoile est inférieur à la note
-        stars.push(<img key={i} src={starFull} alt="Full Star" />); // Ajoute une étoile pleine au tableau
+        stars.push(<img className='StarNote_Star' key={i} src={starFull} alt="Full Star" />); // Ajoute une étoile pleine au tableau
       } else {
-        stars.push(<img key={i} src={starEmpty} alt="Empty Star" />); // Sinon, ajoute une étoile vide au tableau
+        stars.push(<img className='StarNote_Star' key={i} src={starEmpty} alt="Empty Star" />); // Sinon, ajoute une étoile vide au tableau
       }
     }
   
