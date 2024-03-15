@@ -7,12 +7,19 @@ import MainContentStarNote from "./MainContent_StarNote"
 
 function Logement(){
     return <div className='Kasa_Logement'>
-        <MainContentTitle />
-        <MainContentTag />
-        <MainContentPeople />
-        <MainContentStarNote />
-        <MainContentDropDown />
-        
+        <div className="Logement_Title">
+            <div className="Logement_Title_Tag">
+                <MainContentTitle />
+                <MainContentTag />
+            </div>
+            <div className="Logement_Title_People">
+                <MainContentPeople />
+                <MainContentStarNote />
+            </div>
+        </div>
+        <div className="Logement_Content">
+            <MainContentDropDown />
+        </div>  
     </div>
 }
 

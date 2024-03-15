@@ -4,18 +4,18 @@ import Api from '../ApiLogements.json' // Importation des données d'API
 import starEmpty from '../../assets/StarEmpty.png'; // Importation de l'image étoile vide
 import starFull from '../../assets/StarFull.png'; // Importation de l'image étoile pleine
 
-const StarRating = ({ rating }) => {
-    const stars = [];
+const StarRating = ({ note }) => {
+    const stars = []; // Initialisation d'un tableau pour stocker les étoiles
   
-    for (let i = 0; i < 5; i++) {
-      if (i < rating) {
-        stars.push(<img key={i} src={starFull} alt="Full Star" />);
+    for (let i = 0; i < 5; i++) { // i égal à 0, continue tant que i est inférieur à 5, et incrémente i de 1 à chaque itération.
+      if (i < note) { // Si l'indice de l'étoile est inférieur à la note
+        stars.push(<img key={i} src={starFull} alt="Full Star" />); // Ajoute une étoile pleine au tableau
       } else {
-        stars.push(<img key={i} src={starEmpty} alt="Empty Star" />);
+        stars.push(<img key={i} src={starEmpty} alt="Empty Star" />); // Sinon, ajoute une étoile vide au tableau
       }
     }
   
-    return <div>{stars}</div>;
+    return <div>{stars}</div>; // Renvoie les étoiles
   };
 
 function MainContentStarNote(){
@@ -36,7 +36,7 @@ function MainContentStarNote(){
       }
     
     return <div className='MainContent_StarNote'>
-        <StarRating rating={MainContentData.note} /> {/* Intégration du composant StarRating avec la note de l'appartement */}
+        <StarRating note={MainContentData.note} /> {/* Intégration du composant StarRating avec la note de l'appartement */}
     </div>
     
 }
