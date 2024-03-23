@@ -1,4 +1,33 @@
-.DropDown_List{
+.MainContent_DropDown {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+    .DropDown_Item {
+        width: 45%;
+        .DropDown_Title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #FF6060;
+            border-radius: 5px;
+            color: #fff;
+            padding: 7px 20px;
+        }
+        .DropDown_Text {
+            background-color: #F6F6F6;
+            border-radius: 0 0 5px 5px;
+            padding: 10px;
+            line-height: 1.5;
+        }
+        .DropDown_List {
+            background-color: #F6F6F6;
+            border-radius: 0 0 5px 5px;
+            padding: 10px;
+        }
+    }
+}
+/*.DropDown_List{
     width: 1023px;
 }
 .DropDown_Title{
@@ -29,4 +58,4 @@
     display: flex;
     gap: 50px;
     width: 1400px;
-}
+}*/

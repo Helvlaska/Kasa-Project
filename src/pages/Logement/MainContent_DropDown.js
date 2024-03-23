@@ -36,8 +36,8 @@ function MainContentDropDown(){
             </div>
             {/* Vérification si l'élément déroulant de la description est ouvert */}
             {dropDown['description'] && ( 
-                <div> {/* Contenu de l'élément déroulant */}
-                    <p className='DropDown_Text'>{MainContentData.description}</p> {/* Affichage de la description */}
+                <div className='DropDown_Text'> {/* Contenu de l'élément déroulant */}
+                    <p>{MainContentData.description}</p> {/* Affichage de la description */}
                 </div>
             )}   
         </div>

@@ -1,13 +1,69 @@
 .Kasa_Logement{
+    max-width: 1200px;
     font-family: Montserrat;
     letter-spacing: 0em;
     text-align: left;
     color: #FF6060;
+    .Logement_Gallery {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        //overflow: hidden; // Permet de passer l'img en cover et center cf:.Gallery_Img
+        .Gallery_Button {
+            background-color: white;
+            border: none;
+        }
+        .Gallery_Button_Prev {
+            position: absolute;
+            left: 5%;
+            width: 10%;
+            height: 100%;
+            background: transparent;
+            cursor: pointer;
+            z-index: 2;
+            .Button_Img_Prev {
+                height: 19%;
+                transform: rotate(90deg);
+            }
+        }
+        .Gallery_Button_Next {
+            position: absolute;
+            right: 5%;
+            width: 10%;
+            height: 100%;
+            background: transparent;
+            cursor: pointer;
+            z-index: 2;
+            .Button_Img_Next {
+                height: 19%;
+                transform: rotate(-90deg);
+            }
+        }
+        .Gallery_Img {
+            position: relative;
+            width: 90%;
+            height: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: center;
+            //background-size: cover; // Remplace Object-fit: cover;
+            //background-position: center; // Remplace Object-position: center;
+        }
+        .Gallery_Img_Position {
+            position: absolute;
+            left: 50%;
+            top: 90%;
+            color: #FFFFFF;
+        }
+    }
     .Logement_Title {
         display: flex;
         justify-content: space-between;
+        width: 90%;
+        margin: 20px auto;
         .Logement_Title_Tag {
             margin-bottom: 20px;
+            max-width: 80%;
             .MainContent_Title {
                 margin-bottom: 20px;
                 .MainContent_Title_Title {
@@ -40,8 +96,10 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+            justify-content: center;
             .MainContent_People {
                 display: flex;
+                align-items: center;
                 width: min-content;
                 gap: 15px;
                 .MainContent_People_Name {
@@ -62,7 +120,7 @@
             }
             .MainContent_StarNote {
                 .StarNote_Star {
-                    padding: 10px;
+                    padding: 5px;
                 }
             }
         }
