@@ -1,4 +1,4 @@
-import '../../styles/Propos.scss'
+import './Propos.scss'
 import Section2 from './Section2'
 import DropDown from './DropDown'
 function Propos(){

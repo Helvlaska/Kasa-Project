@@ -12,9 +12,9 @@ function DropDown() {
         setDropDown(prevState => ({ ...prevState, [id]: !prevState[id] })); // Utilisation de la fonction setDropDown pour mettre à jour l'état avec l'inversion de la visibilité de l'élément spécifique
     }
     return (
-        <ul className='DropDown_List'> {/*Utilisation de la fonction map pour parcourir chaque élément de la liste*/}
+        <ul className='MainContent_DropDown_List'> {/*Utilisation de la fonction map pour parcourir chaque élément de la liste*/}
             {Api.map((item, id) => (
-                <li key={`${item}-${id}`} className='DropDown_Item'>
+                <li key={`${item}-${id}`} className='DropDown_Item_Propos'>
                     <div className='DropDown_Title'> 
                         <h6>{item.Title}</h6>
                         <img src={Arrow} alt='Arrow' onClick={() => startDropDown(id)} /> {/*événement onClick qui appelle la fonction startDropDown avec l'index de l'élément en tant qu'argument*/}

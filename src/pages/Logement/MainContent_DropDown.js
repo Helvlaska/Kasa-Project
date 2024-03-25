@@ -19,7 +19,7 @@ function MainContentDropDown(){
     const équipementsList = (MainContentData.équipements); // Liste des équipements du logement
     
     return <div className='MainContent_DropDown'> {/* Bloc pour les éléments déroulants */}
-        <div className='DropDown_Item'> {/* Élément déroulant pour la description */}
+        <div className='DropDown_Item_Logement'> {/* Élément déroulant pour la description */}
             <div className='DropDown_Title'> {/* Bloc titre de l'élément déroulant */}
                 <h6>Description</h6> {/* Titre de la description */}
                 <img src={Arrow} alt='Arrow' onClick={() => startDropDown('description')} /> {/* Icône de flèche avec événement onClick pour ouvrir/fermer l'élément */}
@@ -31,7 +31,7 @@ function MainContentDropDown(){
                 </div>
             )}   
         </div>
-        <div className='DropDown_Item'> {/* Élément déroulant pour les équipements */}
+        <div className='DropDown_Item_Logement'> {/* Élément déroulant pour les équipements */}
             <div className='DropDown_Title'> {/* Bloc titre de l'élément déroulant */}
                 <h6>Équipements</h6> {/* Titre de la description */}
                 <img src={Arrow} alt='Arrow' onClick={() => startDropDown('équipements')} /> {/* Icône de flèche avec événement onClick pour ouvrir/fermer l'élément */}
