@@ -13,7 +13,7 @@ import Header from './pages/Header/Header';
 import Home from './pages/Home/Home';
 import Propos from './pages/Propos/Propos';
 import Logement from './pages/Logement/Logement'
-import Error from './pages/Error/Error'
+import NotFoundPage from './pages/Error/Error'
 import Footer from './pages/Footer/Footer';
 
 //on crée une constante pour pointer l'élément HTML sur lequel on va fixer l'app React
@@ -26,7 +26,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/Propos" element={<Propos />} />
         <Route path="/Logement/:identifiant" element={<Logement />} />
-        <Route path="*" element={<Error />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
     </Router>
