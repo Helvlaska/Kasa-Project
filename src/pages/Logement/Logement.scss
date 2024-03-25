@@ -1,9 +1,10 @@
-.Kasa_Logement{
-    max-width: 1200px;
+.Kasa_Logement {
+    max-width: 1400px;
     font-family: Montserrat;
     letter-spacing: 0em;
     text-align: left;
     color: #FF6060;
+    margin: auto;
     .Logement_Gallery {
         display: flex;
         justify-content: center;
@@ -53,7 +54,7 @@
             position: absolute;
             left: 50%;
             top: 90%;
-            color: #FFFFFF;
+            color: #FFF;
         }
     }
     .Logement_Title {
