@@ -6,23 +6,20 @@ import { useState } from 'react'
 
 
 function DropDown() {
-    const [dropDown, setDropDown] = useState(Array(Api.length).fill(false));
-    const startDropDown = (index) => { // Définition de la fonction startDropDown qui prend l'index comme argument
-        setDropDown(prevState => { // Appel de la fonction setDropDownStates pour mettre à jour l'état local
-            const newState = [...prevState]; // Création d'une nouvelle copie de l'état précédent
-            newState[index] = !newState[index]; // Inversion de la visibilité de l'élément spécifique dans le tableau d'états
-            return newState; // Retour de la nouvelle copie de l'état mise à jour
-        })
+
+    const [dropDown, setDropDown] = useState({}); // État pour gérer l'état des éléments déroulants
+    const startDropDown = (id) => { // Fonction pour ouvrir ou fermer un élément déroulant
+        setDropDown(prevState => ({ ...prevState, [id]: !prevState[id] })); // Utilisation de la fonction setDropDown pour mettre à jour l'état avec l'inversion de la visibilité de l'élément spécifique
     }
     return (
         <ul className='DropDown_List'> {/*Utilisation de la fonction map pour parcourir chaque élément de la liste*/}
-            {Api.map((item, index) => (
-                <li key={`${item}-${index}`} className='DropDown_Item'>
+            {Api.map((item, id) => (
+                <li key={`${item}-${id}`} className='DropDown_Item'>
                     <div className='DropDown_Title'> 
                         <h6>{item.Title}</h6>
-                        <img src={Arrow} alt='Arrow' onClick={() => startDropDown(index)} /> {/*événement onClick qui appelle la fonction startDropDown avec l'index de l'élément en tant qu'argument*/}
+                        <img src={Arrow} alt='Arrow' onClick={() => startDropDown(id)} /> {/*événement onClick qui appelle la fonction startDropDown avec l'index de l'élément en tant qu'argument*/}
                     </div>
-                    {dropDown[index] && ( 
+                    {dropDown[id] && ( 
                         <div> {/*Utilisation de l'état local pour déterminer si le contenu déroulant doit être affiché*/}
                             <p className='DropDown_Text'>{item.Content}</p>
                         </div>)}   
