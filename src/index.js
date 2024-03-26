@@ -9,12 +9,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './styles/Normalize.scss'
 import './styles/index.scss';
 //l'import des components pour construire les pages
-import Header from './pages/Header/Header';
+import Header from './pages/Componants/Header/Header';
 import Home from './pages/Home/Home';
 import Propos from './pages/Propos/Propos';
 import Logement from './pages/Logement/Logement'
 import NotFoundPage from './pages/Error/Error'
-import Footer from './pages/Footer/Footer';
+import Footer from './pages/Componants/Footer/Footer';
 
 //on crée une constante pour pointer l'élément HTML sur lequel on va fixer l'app React
 const root = ReactDOM.createRoot(document.getElementById('root'));

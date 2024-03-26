@@ -1,7 +1,6 @@
 /****IMPORTATIONS****/
-import '../../styles/Header.scss'
-import '../../styles/Nav.scss'
-import Logo from '../../assets/LogoPink.svg'
+import './Header.scss'
+import Logo from '../../../assets/LogoPink.svg'
 import { Link } from 'react-router-dom'
 
 function Header(){

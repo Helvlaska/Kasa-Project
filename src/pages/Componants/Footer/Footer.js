@@ -1,7 +1,6 @@
 /****IMPORTATIONS****/
-import '../../styles/Footer.scss'
-import Logo from '../../assets/LogoWhite.svg'
-//import Api from '../ApiTexte.json'
+import './Footer.scss'
+import Logo from '../../../assets/LogoWhite.svg'
 
 function Footer(){
     return <div className='Kasa_Footer'>

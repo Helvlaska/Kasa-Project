@@ -1,0 +1,28 @@
+.Kasa_Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1400px; 
+    margin : 30px auto;
+    .Kasa_Logo {
+        width: 25%;
+        height: auto;
+    }
+    .Kasa_Nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 40%;
+        .Kasa_Nav_Txt {
+            width: 136px;
+            color: #FF6060;
+            text-align: right;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 34.224px;
+            text-decoration: none;
+        }
+    }  
+}

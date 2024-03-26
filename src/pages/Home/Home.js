@@ -1,8 +1,7 @@
 // fichier de construction de pages
 
 /****IMPORTATIONS****/
-import '../../styles/Home.scss'
-import '../../styles/Gallery.scss'
+import './Home.scss'
 import SectionImage from '../Componants/SectionImg/SectionImg'
 import Image from '../../assets/Section_img_Accueil.png' 
 import Gallery from './Gallery'
