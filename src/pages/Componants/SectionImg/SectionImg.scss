@@ -1,0 +1,21 @@
+.Kasa_Section_Img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 50px auto;
+    .Section_Img {
+        width: 100%;
+        border-radius: 25px;
+        filter: brightness(60%);
+    }
+    .Home_SectionImg_Text {
+        position: absolute;
+        color: #FFF;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 68.45px;
+        text-align: left;
+
+    }
+}

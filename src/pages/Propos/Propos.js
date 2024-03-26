@@ -1,10 +1,12 @@
 import './Propos.scss'
-import Section2 from './Section2'
+import SectionImage from '../Componants/SectionImg/SectionImg'
+import Image from '../../assets/Section_img_aPropos.png' 
 import DropDown from './DropDown'
+
 function Propos(){
     return (
         <div className="Kasa_Propos">
-            <Section2 />
+            <SectionImage src={Image}/>
             <DropDown />
         </div>
     )
