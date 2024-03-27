@@ -1,7 +1,6 @@
 import './Propos.scss'
 import SectionImage from '../Componants/SectionImg/SectionImg'
-import Image from '../../assets/Section_img_aPropos.png' 
-//import DropDown from './DropDown'
+import Image from '../../assets/SectionImg_Propos.png' 
 import DropDown from './DropDown'
 
 function Propos(){

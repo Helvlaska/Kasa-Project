@@ -3,8 +3,8 @@ import './SectionImg.scss'
 
 function SectionImage({ src, children }) {
   
-    return (<section className="Kasa_Section_Img">
-      <img src={src} alt="Kasa_Image" className='Section_Img' />
+    return (<section className="SectionImg">
+      <img src={src} alt="Section_Image" className='SectionImg_Img' />
       {children}
     </section>
   );
