@@ -1,22 +1,22 @@
-.Kaza_Error{
+.Kaza_Error {
     font-family: Montserrat;
     text-align: center;
     letter-spacing: 0em;
     color: #FF6060;
-}
-.Error_Title {
-    font-size: 288px;
-    font-weight: 700;
-    line-height: 411px;
-}
-.Error_Content{
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 51px;
-}
-.Error_Link{
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    color: #FF6060;
+    .Error_Title {
+        font-size: 288px;
+        font-weight: 700;
+        line-height: 300px;
+    }
+    .Error_Content {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+    .Error_Link {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 130px;
+        color: #FF6060;
+    }
 }
