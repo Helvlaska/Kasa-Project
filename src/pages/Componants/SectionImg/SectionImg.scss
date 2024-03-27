@@ -14,7 +14,7 @@
         object-fit: cover;
         filter: brightness(60%);
     }
-    .Home_SectionImg_Text {
+    .SectionImg_Content {
         position: absolute;
         color: $secondary-color;
         font-size: 48px;
@@ -27,7 +27,7 @@
 // Mobile
 @media only screen and (max-width: $mobile-max-width) {
     // Page Home
-    .Kasa_Home {
+    .Home {
         .SectionImg {
             max-width: $mobile-max-width; 
             margin: 0;
@@ -35,7 +35,7 @@
                 height: 111px;
                 border-radius: 10px;
             }
-            .Home_SectionImg_Text {
+            .SectionImg_Content {
                 width: 60%;
                 left: 5%;
                 font-size: 24px;

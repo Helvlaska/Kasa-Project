@@ -7,9 +7,9 @@ import Image from '../../assets/SectionImg_Accueil.png'
 import Gallery from './Gallery'
 
 function Home(){
-    return <div className='Kasa_Home'>
+    return <div className='Home'>
         <SectionImage src={Image}>
-            <p className='Home_SectionImg_Text'>Chez vous, partout et ailleurs</p>
+            <p className='SectionImg_Content'>Chez vous, partout et ailleurs</p>
         </SectionImage>
         <Gallery />
     </div>
