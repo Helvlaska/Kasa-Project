@@ -1,3 +1,5 @@
+@import '../../../styles/Variables';
+
 .Kasa_Header {
     display: flex;
     justify-content: space-between;
@@ -15,7 +17,7 @@
         width: 40%;
         .Kasa_Nav_Txt {
             width: 136px;
-            color: #FF6060;
+            color: $primary-color;
             text-align: right;
             font-family: Montserrat;
             font-size: 24px;
