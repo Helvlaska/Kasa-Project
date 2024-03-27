@@ -1,19 +1,22 @@
+// css page a Propos
+.DropDown_List{
+    width: 90%;
+    margin: 30px auto;
+    .DropDown_Item_Propos{
+        margin: 20px 0;
+    }
+}
+// css page Logement
 .MainContent_DropDown {
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: 20px auto;
+    .DropDown_Item_Logement {
+        width: 45%;
+    }
 }
-.MainContent_DropDown_List{
-    width: 90%;
-    margin: 30px auto;
-}
-.DropDown_Item_Logement {
-    width: 45%;
-}
-.DropDown_Item_Propos{
-    margin: 20px 0;
-}
+// css composant générique
 .DropDown_Title {
     display: flex;
     align-items: center;
@@ -23,15 +26,9 @@
     color: #fff;
     padding: 7px 20px;
 }
-.DropDown_Text {
+.DropDown_Content {
     background-color: #F6F6F6;
     border-radius: 0 0 5px 5px;
-    padding: 10px;
+    padding: 25px 15px;
     line-height: 1.5;
 }
-.DropDown_List {
-    background-color: #F6F6F6;
-    border-radius: 0 0 5px 5px;
-    padding: 10px;
-}
-
