@@ -1,22 +1,23 @@
 @import '../../../styles/Variables';
 
-.Kasa_Header {
+// Desktop
+.Header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    max-width: 1400px; 
+    max-width: $desktop-max-width; 
     margin : 30px auto;
-    .Kasa_Logo {
+    .Header_Logo {
         width: 25%;
         height: auto;
     }
-    .Kasa_Nav {
+    .Header_Nav {
         display: flex;
         justify-content: flex-end;
         width: 40%;
-        .Kasa_Nav_Txt {
-            width: 136px;
+        .Nav_Content {
+            width: 50%;
             color: $primary-color;
             text-align: right;
             font-family: Montserrat;
@@ -25,6 +26,18 @@
             font-weight: 500;
             line-height: 34.224px;
             text-decoration: none;
+        }
+    }  
+}
+
+// Mobile
+@media only screen and (max-width: $mobile-max-width) {
+    .Header {
+        max-width: $mobile-max-width; 
+        .Header_Nav {
+            .Nav_Content {
+                font-size: 12px;
+            }
         }
     }  
 }

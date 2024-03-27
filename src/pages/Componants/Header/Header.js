@@ -4,11 +4,11 @@ import Logo from '../../../assets/LogoPink.svg'
 import { Link } from 'react-router-dom'
 
 function Header(){
-    return <div className='Kasa_Header'>
-        <img src={Logo} alt='Kasa' className='Kasa_Logo' />
-        <nav className='Kasa_Nav'>
-            <Link className='Kasa_Nav_Txt' to="/">Accueil</Link>
-            <Link className='Kasa_Nav_Txt' to="/Propos">A Propos</Link>
+    return <div className='Header'>
+        <img src={Logo} alt='Kasa' className='Header_Logo' />
+        <nav className='Header_Nav'>
+            <Link className='Nav_Content' to="/">Accueil</Link>
+            <Link className='Nav_Content' to="/Propos">A Propos</Link>
         </nav>
     </div>
 }
