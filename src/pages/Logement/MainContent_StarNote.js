@@ -1,4 +1,4 @@
-import { useMainContentData } from '../MainContentData'; // Importation de la fonction d'appel a l'Api
+import { useMainContentData } from '../Data/MainContentData'; // Importation de la fonction d'appel a l'Api
 import starEmpty from '../../assets/StarEmpty.png'; // Importation de l'image étoile vide
 import starFull from '../../assets/StarFull.png'; // Importation de l'image étoile pleine
 

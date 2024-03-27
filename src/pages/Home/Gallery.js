@@ -1,5 +1,4 @@
-/****IMPORTATIONS****/
-import Api from '../ApiLogements.json'
+import Api from '../Data/ApiLogements.json' // Importation des données
 import { Link } from 'react-router-dom'
 
 function Gallery(){

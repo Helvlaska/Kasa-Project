@@ -1,4 +1,4 @@
-import Gallery from "./Gallery"
+import Carrousel from "./MainContent_Carrousel"
 import MainContentDropDown from "./MainContent_DropDown"
 import MainContentTitle from "./MainContent_Title"
 import MainContentTag from "./MainContent_Tag"
@@ -8,7 +8,7 @@ import './Logement.scss'
 
 function Logement(){
     return <div className='Kasa_Logement'>
-        <Gallery />
+        <Carrousel />
         <div className="Logement_Title">
             <div className="Logement_Title_Tag">
                 <MainContentTitle />

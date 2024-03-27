@@ -1,0 +1,52 @@
+.Carrousel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    //overflow: hidden; // Permet de passer l'img en cover et center cf:.Gallery_Img
+    .Carrousel_Button {
+        background-color: white;
+        border: none;
+    }
+    .Carrousel_Button_Prev {
+        position: absolute;
+        left: 5%;
+        width: 10%;
+        height: 100%;
+        background: transparent;
+        cursor: pointer;
+        z-index: 2;
+        .Button_Img_Prev {
+            height: 19%;
+            transform: rotate(90deg);
+        }
+    }
+    .Carrousel_Button_Next {
+        position: absolute;
+        right: 5%;
+        width: 10%;
+        height: 100%;
+        background: transparent;
+        cursor: pointer;
+        z-index: 2;
+        .Button_Img_Next {
+            height: 19%;
+            transform: rotate(-90deg);
+        }
+    }
+    .Carrousel_Img {
+        position: relative;
+        width: 90%;
+        height: 400px;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+        //background-size: cover; // Remplace Object-fit: cover;
+        //background-position: center; // Remplace Object-position: center;
+    }
+    .Carrousel_Img_Position {
+        position: absolute;
+        left: 50%;
+        top: 90%;
+        color: #FFF;
+    }
+}

@@ -1,4 +1,4 @@
-import { useMainContentData } from '../MainContentData'; // Importation de la fonction d'appel a l'Api
+import { useMainContentData } from '../Data/MainContentData'; // Importation de la fonction d'appel a l'Api
 
 function MainContentTag(){
 
