@@ -1,4 +1,7 @@
-.Kasa_Footer{
+@import '../../../styles/Variables';
+
+// Desktop
+.Footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -8,20 +11,30 @@
     padding: 30px 0;
     margin: 0 auto;
     gap: 28.556px;
+    .Footer_Logo {
+        width: 12%;
+    }
+    .Footer_Content {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: $secondary-color;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+    }
 }
-.Kasa_Logo{
-    width: 12%;
-}
-.Footer_Text{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: flex-end;
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%;
+
+// Mobile
+@media only screen and (max-width: $mobile-max-width) {
+    .Footer {
+        max-width: $mobile-max-width; 
+        .Footer_Content {
+            font-size: 12px;
+        }
+    }  
 }
