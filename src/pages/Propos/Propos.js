@@ -5,7 +5,7 @@ import DropDown from './DropDown'
 
 function Propos(){
     return (
-        <div className="Kasa_Propos">
+        <div className='Propos'>
             <SectionImage src={Image}/>
             <DropDown />
         </div>

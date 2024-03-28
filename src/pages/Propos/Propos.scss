@@ -1,10 +1,20 @@
-.Kasa_Propos {
-    max-width: 1400px;
+@import '../../styles/Variables';
+
+// Desktop
+.Propos {
+    max-width: $desktop-max-width;
     width: 90%;
-    font-family: Montserrat;
+    font-family: $primary-font;
     letter-spacing: 0em;
     text-align: left;
-    color: #FF6060;
-    margin: auto;
+    color: $primary-color;
+    margin: 0 auto;
     flex: 1;
+}
+
+// Mobile
+@media only screen and (max-width: $mobile-max-width) {
+    .Propos {
+        max-width: $mobile-max-width;
+    }
 }

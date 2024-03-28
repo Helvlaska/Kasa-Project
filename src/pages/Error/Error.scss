@@ -1,5 +1,8 @@
+@import '../../styles/Variables';
+
+// Desktop
 .Kaza_Error {
-    font-family: Montserrat;
+    font-family: $primary-font;
     text-align: center;
     letter-spacing: 0em;
     color: #FF6060;
