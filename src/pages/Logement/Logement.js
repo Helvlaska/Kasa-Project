@@ -7,14 +7,14 @@ import MainContentStarNote from "./MainContent_StarNote"
 import './Logement.scss'
 
 function Logement(){
-    return <div className='Kasa_Logement'>
+    return <div className='Logement'>
         <Carrousel />
         <div className="Logement_Title">
-            <div className="Logement_Title_Tag">
+            <div className="Title_Tag">
                 <MainContentTitle />
                 <MainContentTag />
             </div>
-            <div className="Logement_Title_People">
+            <div className="Title_People">
                 <MainContentPeople />
                 <MainContentStarNote />
             </div>

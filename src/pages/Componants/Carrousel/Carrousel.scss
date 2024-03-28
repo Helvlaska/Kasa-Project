@@ -1,10 +1,13 @@
+@import '../../../styles/Variables';
+
+// Desktop
 .Carrousel {
     display: flex;
     justify-content: center;
     position: relative;
     //overflow: hidden; // Permet de passer l'img en cover et center cf:.Gallery_Img
     .Carrousel_Button {
-        background-color: white;
+        background-color: $secondary-color;
         border: none;
     }
     .Carrousel_Button_Prev {
@@ -47,6 +50,28 @@
         position: absolute;
         left: 50%;
         top: 90%;
-        color: #FFF;
+        color: $secondary-color;
+    }
+}
+
+// Mobile
+@media only screen and (max-width: $mobile-max-width) {
+    .Carrousel {
+        .Carrousel_Button_Prev {
+            .Button_Img_Prev {
+                height: 10%;
+            }
+        }
+        .Carrousel_Button_Next {
+            .Button_Img_Next {
+                height: 10%;
+            }
+        }
+        .Carrousel_Img {
+            height: 250px;
+        }
+        .Carrousel_Img_Position {
+            display: none;
+        }
     }
 }

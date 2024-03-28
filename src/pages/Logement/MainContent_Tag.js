@@ -11,10 +11,10 @@ function MainContentTag(){
   const TagList = (MainContentData["Mots clés"]); // Liste des mots-clés du logement
     
   return <div className='MainContent_Tag'>
-    <ul className="MainContent_TagList"> {/* Liste des mots-clés */}
+    <ul className='MainContent_TagList'> {/* Liste des mots-clés */}
       {/* Parcours et affichage des mots-clés */}
       {TagList.map((item, Tag) => ( 
-        <li key={`${item}-${Tag}`} className='MainContent_TagList_Tag'>{item}</li> 
+        <li key={`${item}-${Tag}`} className='TagList_Tag'>{item}</li> 
       ))}
     </ul>
   </div>

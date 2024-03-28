@@ -26,6 +26,11 @@ body {
 	line-height: 1;
 	width:100%;
 }
+#root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
 ol, ul {
 	list-style: none;
 }

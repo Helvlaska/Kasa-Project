@@ -10,8 +10,8 @@ function MainContentTitle(){
   }
 
   return <div className='MainContent_Title'> {/* Bloc de titre */}
-    <h1 className="MainContent_Title_Title">{MainContentData.title}</h1> {/* Affichage du titre du logement */}
-    <p className="MainContent_Title_Lieu">{MainContentData.location}</p> {/* Affichage de l'emplacement du logement */}
+    <h1 className='Title_Title'>{MainContentData.title}</h1> {/* Affichage du titre du logement */}
+    <p className='Title_Lieu'>{MainContentData.location}</p> {/* Affichage de l'emplacement du logement */}
   </div>
 }
 

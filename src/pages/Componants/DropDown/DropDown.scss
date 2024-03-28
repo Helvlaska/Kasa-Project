@@ -1,3 +1,23 @@
+@import '../../../styles/Variables';
+
+// Desktop
+// css composant générique
+.DropDown_Title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $primary-color;
+    border-radius: 5px;
+    color: $secondary-color;
+    padding: 7px 20px;
+}
+.DropDown_Content {
+    background-color: $background-color;
+    border-radius: 0 0 5px 5px;
+    padding: 25px 15px;
+    line-height: 1.5;
+}
+
 // css page a Propos
 .DropDown_List{
     width: 90%;
@@ -6,6 +26,7 @@
         margin: 20px 0;
     }
 }
+
 // css page Logement
 .MainContent_DropDown {
     display: flex;
@@ -16,19 +37,36 @@
         width: 45%;
     }
 }
-// css composant générique
-.DropDown_Title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #FF6060;
-    border-radius: 5px;
-    color: #fff;
-    padding: 7px 20px;
+
+// Mobile
+@media only screen and (max-width: $mobile-max-width) {
+    // css composant générique
+    .DropDown_Title {  
+        font-size: 13px; 
+        padding: 3px 10px;
+    }
+    .DropDown_Content {
+        font-size: 12px;
+    }
+
+    // css page Logement
+    .MainContent_DropDown {
+        flex-wrap: wrap;
+        .DropDown_Item_Logement {
+            width: 100%;
+            margin-bottom: 5%;
+        }
+    }
 }
-.DropDown_Content {
-    background-color: #F6F6F6;
-    border-radius: 0 0 5px 5px;
-    padding: 25px 15px;
-    line-height: 1.5;
+
+// Tablet
+@media only screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    // css page Logement
+    .MainContent_DropDown {
+        flex-wrap: wrap;
+        .DropDown_Item_Logement {
+            width: 100%;
+            margin-bottom: 3%;
+        }
+    }
 }

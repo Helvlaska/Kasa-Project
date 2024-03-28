@@ -12,8 +12,8 @@ function MainContentPeople(){
   const peopleInfo = (MainContentData.hôte); // Infos des propriétaires
 
   return <div className='MainContent_People'> {/* Bloc pour les informations sur les personnes */}
-    <p className='MainContent_People_Name'>{peopleInfo.nom}{peopleInfo.name}</p> {/* Nom du propriétaire */}
-    <img src={peopleInfo.photo} alt='Propriétaire' className='MainContent_People_Picture' /> {/* Photo du propriétaire */}
+    <p className='People_Name'>{peopleInfo.nom}{peopleInfo.name}</p> {/* Nom du propriétaire */}
+    <img src={peopleInfo.photo} alt='Propriétaire' className='People_Picture' /> {/* Photo du propriétaire */}
   </div>
 }
 
