@@ -1,26 +1,67 @@
 @import '../../styles/Variables';
 
 // Desktop
-.Kaza_Error {
+.Error {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     font-family: $primary-font;
     text-align: center;
     letter-spacing: 0em;
-    color: #FF6060;
+    color: $primary-color;
+    width: 90%;
+    margin: auto;
     flex: 1;
-    .Error_Title {
-        font-size: 288px;
-        font-weight: 700;
-        line-height: 300px;
-    }
     .Error_Content {
-        font-size: 36px;
-        font-weight: 500;
-        line-height: 40px;
+        .Content_Title {
+            display: block;
+            font-size: 288px;
+            font-weight: 700;
+            line-height: 411px;
+        }
+        .Content_Content {
+            display: block;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 51px;
+        }
     }
     .Error_Link {
+        display: block;
         font-size: 18px;
         font-weight: 500;
-        line-height: 130px;
-        color: #FF6060;
+        line-height: 400px;
+        color: $primary-color;
+    }
+}
+
+// Mobile
+@media only screen and (max-width: $mobile-max-width) {
+    .Error {
+        max-width: $mobile-max-width;
+        .Error_Content {
+            .Content_Title {
+                font-size: 96px;
+                line-height: 137px;
+            }
+            .Content_Content {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+        .Error_Link {
+            font-size: 14px;
+            line-height: 150px;
+        }
+    }
+}
+
+// Tablet
+@media only screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    .Error {  
+        max-width: $tablet-max-width;
+        .Error_Link {
+            line-height: 300px;
+        }
     }
 }

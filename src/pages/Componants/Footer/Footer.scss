@@ -6,7 +6,6 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    max-width: $desktop-max-width;
     width: 100%;
     background-color: $footer-color;
     padding: 30px 0;
@@ -37,5 +36,12 @@
         .Footer_Content {
             font-size: 12px;
         }
+    }  
+}
+
+// Tablet
+@media only screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    .Footer {
+        max-width: $tablet-max-width; 
     }  
 }
