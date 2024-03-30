@@ -6,25 +6,27 @@ export function DropDown({ title, content }) { // la fonction prend deux props (
 
   const [dropDown, setDropDown] = useState(false); // État pour gérer l'état de l'élément déroulant
 
+  const classNameAnimation = dropDown ? 'open' : 'closed'; // Variable pour créer de nouvelles class si le drop down est ouvert ou fermé
+  
   const startDropDown = () => { // Fonction pour ouvrir ou fermer l'élément déroulant
     setDropDown(prevState => !prevState); // Inversion de l'état actuel
   };
 
   return (
-    <div className='DropDown_Item_Logement DropDown_Item_Propos'>
-      <div className='DropDown_Title' onClick={startDropDown}>
+    <div className='DropDown_Item_Logement DropDown_Item_Propos' >
+      <div className={`DropDown_Title ${classNameAnimation}`} onClick={startDropDown} >
         <h6>{title}</h6>
-        <img src={Arrow} alt='Arrow' />
+        <img src={Arrow} alt='Arrow' className='Arrow' />
       </div>
       {dropDown && ( // Affichage conditionnel du contenu déroulant
-        <div className='DropDown_Content'> 
+        <div className={`DropDown_Content ${classNameAnimation}`} > 
             {/* Analyse du type de contenu de la donnée : si un bloc de texte = renvoyer un <p>, sinon une liste <ul>*/}
             {typeof content === 'string' ? ( 
-                <p>{content}</p>
+                <p className='Content' >{content}</p>
             ) : (
                 <ul className='DropDown_Content_List'>
                     {content.map((item, index) => (
-                        <li key={index}>{item}</li>
+                        <li className='Content' key={index}>{item} </li>
                     ))}
                 </ul>
             )}
