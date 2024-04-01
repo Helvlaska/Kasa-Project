@@ -8,16 +8,22 @@ export function Carrousel({ images, initialIndex }) {
   
     return (
       <div className='Carrousel'>
-        <button className='Carrousel_Button Carrousel_Button_Prev' onClick={prev}>
-          <img className='Button_Img_Prev' src={Arrow} alt='Arrow' />
-        </button>
+        {images.length > 1 && (
+          <button className='Carrousel_Button Carrousel_Button_Prev' onClick={prev}>
+            <img className='Button_Img_Prev' src={Arrow} alt='Arrow' />
+          </button>
+        )}
         <img className='Carrousel_Img' src={images[currentIndex]} alt={`Carrousel_Picture ${currentIndex}`} />
-        <div className='Carrousel_Img_Position'>
-          <p>{currentIndex + 1}/{images.length}</p>
-        </div>
-        <button className='Carrousel_Button Carrousel_Button_Next' onClick={next}>
-          <img className='Button_Img_Next' src={Arrow} alt='Arrow' />
-        </button>
+        {images.length > 1 && (
+          <div className='Carrousel_Img_Position'>
+            <p>{currentIndex + 1}/{images.length}</p>
+          </div>
+        )}
+        {images.length > 1 && (
+          <button className='Carrousel_Button Carrousel_Button_Next' onClick={next}>
+            <img className='Button_Img_Next' src={Arrow} alt='Arrow' />
+          </button>
+        )}
       </div>
     );
   }

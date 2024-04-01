@@ -13,25 +13,26 @@ export function DropDown({ title, content }) { // la fonction prend deux props (
   };
 
   return (
-    <div className='DropDown_Item_Logement DropDown_Item_Propos' >
+    <div className='DropDown DropDown_Item_Logement DropDown_Item_Propos' >
       <div className={`DropDown_Title ${classNameAnimation}`} onClick={startDropDown} >
         <h6>{title}</h6>
         <img src={Arrow} alt='Arrow' className='Arrow' />
       </div>
-      {dropDown && ( // Affichage conditionnel du contenu déroulant
-        <div className={`DropDown_Content ${classNameAnimation}`} > 
-            {/* Analyse du type de contenu de la donnée : si un bloc de texte = renvoyer un <p>, sinon une liste <ul>*/}
-            {typeof content === 'string' ? ( 
-                <p className='Content' >{content}</p>
+      <div className={`DropDown_Content ${classNameAnimation}`} > 
+        {dropDown && (
+          <>
+            {typeof content === 'string' ? ( // Ajout d'une condition pour déterminer le type de contenu de la donnée (paragraphe, liste,...)
+              <p className='Content'>{content}</p>
             ) : (
-                <ul className='DropDown_Content_List'>
-                    {content.map((item, index) => (
-                        <li className='Content' key={index}>{item} </li>
-                    ))}
-                </ul>
+              <ul className='Content_List'>
+                {content.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
             )}
-        </div>
-      )}
+          </>
+        )}
+      </div>
     </div>
   );
 }

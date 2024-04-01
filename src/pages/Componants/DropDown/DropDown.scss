@@ -3,30 +3,46 @@
 
 // Desktop
 // css composant générique
-.DropDown_Title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: $primary-color;
-    border-radius: 5px;
-    color: $secondary-color;
-    padding: 7px 20px;
-    &.open {
+.DropDown {
+    .DropDown_Title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $primary-color;
+        border-radius: 5px;
+        color: $secondary-color;
+        padding: 7px 20px;
+        &.open {
+            .Arrow {
+                animation: openArrow 0.7s ease forwards;
+            }
+        }
+        &.closed {
+            .Arrow {
+                animation: closeArrow 0.1s ease forwards;
+            }
+        }
         .Arrow {
-            animation: openArrow 0.7s ease forwards;
+            cursor: pointer;
+            transform: rotate(180deg);
         }
     }
-    &.closed {
-        .Arrow {
-            animation: closeArrow 0.7s ease forwards;
+    .DropDown_Content {
+        position: relative;
+        background-color: $background-color;
+        border-radius: 0 0 5px 5px;
+        line-height: 1.5;
+        overflow: hidden;
+        &.open {
+            animation: openDropDown 0.7s ease-in-out forwards;
+        }
+        .Content, .Content_List {
+            padding: 20px;
+        }
+        .Content_List {
+            line-height: 2;
         }
     }
-}
-.DropDown_Content {
-    background-color: $background-color;
-    border-radius: 0 0 5px 5px;
-    line-height: 1.5;
-    padding: 25px 15px;
 }
 
 // css page a Propos
@@ -45,7 +61,7 @@
     width: 90%;
     margin: 20px auto;
     .DropDown_Item_Logement {
-        width: 45%;
+        width: 48%;
     }
 }
 

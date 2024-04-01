@@ -5,7 +5,6 @@
     display: flex;
     justify-content: center;
     position: relative;
-    //overflow: hidden; // Permet de passer l'img en cover et center cf:.Gallery_Img
     .Carrousel_Button {
         background-color: $secondary-color;
         border: none;
@@ -43,8 +42,6 @@
         border-radius: 10px;
         object-fit: cover;
         object-position: center;
-        //background-size: cover; // Remplace Object-fit: cover;
-        //background-position: center; // Remplace Object-position: center;
     }
     .Carrousel_Img_Position {
         position: absolute;
