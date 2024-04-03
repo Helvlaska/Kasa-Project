@@ -10,6 +10,8 @@ function CarrouselLogement() {
   }
 
   return (
+    // On utilise la props "image" qui va aller chercher les données sous la clef "des photos"...
+    // ... et la props initialIndex pour dire qu'on veut commencer a l'index 0 soit la première image
     <Carrousel images={MainContentData["des photos"]} initialIndex={0} />
   );
 }
