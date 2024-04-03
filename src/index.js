@@ -1,5 +1,3 @@
-//fichier pour lier notre app React a notre HTML et le REPERTOIRE DE PAGES
-
 // les imports pour faire fonctionner l'app React
 import React from 'react';
 import ReactDOM from 'react-dom/client';
