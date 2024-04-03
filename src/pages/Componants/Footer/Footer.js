@@ -1,6 +1,5 @@
-/****IMPORTATIONS****/
-import './Footer.scss'
-import Logo from '../../../assets/LogoWhite.svg'
+import Logo from '../../../assets/LogoWhite.svg' // Importation de l'image de Logo
+import './Footer.scss' // Importation du style du composant
 
 function Footer(){
     return <div className='Footer'>
