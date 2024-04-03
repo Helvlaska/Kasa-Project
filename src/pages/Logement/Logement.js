@@ -1,10 +1,10 @@
-import Carrousel from "./MainContent_Carrousel"
-import MainContentDropDown from "./MainContent_DropDown"
-import MainContentTitle from "./MainContent_Title"
-import MainContentTag from "./MainContent_Tag"
-import MainContentPeople from "./MainContent_People"
-import MainContentStarNote from "./MainContent_StarNote"
-import './Logement.scss'
+import Carrousel from "./MainContent_Carrousel" // Import du composant Carrousel
+import MainContentDropDown from "./MainContent_DropDown" // Import du composant DropDown
+import MainContentTitle from "./MainContent_Title" // Import du composant Title
+import MainContentTag from "./MainContent_Tag" // Import du composant Tag
+import MainContentPeople from "./MainContent_People" // Import du composant People
+import MainContentStarNote from "./MainContent_StarNote" // Import du composant StarNote
+import './Logement.scss' // Import du style de la page
 
 function Logement(){
     return <div className='Logement'>
