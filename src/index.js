@@ -15,13 +15,14 @@ import Logement from './pages/Logement/Logement'
 import NotFoundPage from './pages/Error/Error'
 import Footer from './pages/Componants/Footer/Footer';
 
-//on crée une constante pour pointer l'élément HTML sur lequel on va fixer l'app React
+//on pointe l'élément HTML sur lequel on va fixer l'app React
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
       <Header />
       <Routes>
+        <Route path="/kasa-Project" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/Propos" element={<Propos />} />
         <Route path="/Logement/:identifiant" element={<Logement />} />
