@@ -3,15 +3,17 @@ import { useMainContentData } from '../Data/MainContentData'; // Importation de 
 
 function MainContentTitle(){
 
-  const MainContentData = useMainContentData(); // Utilisation de la fonction d'importation des données de l'Api
+  // Utilisation de la fonction d'importation des données de l'Api
+  const MainContentData = useMainContentData(); 
   
+  // vérification de nullité des données de l'Api
   if (!MainContentData) {
-    return <div>Loading...</div>; // vérification de nullité des données de l'Api
+    return <div>Loading...</div>; 
   }
 
-  return <div className='MainContent_Title'> {/* Bloc de titre */}
-    <h1 className='Title_Title'>{MainContentData.title}</h1> {/* Affichage du titre du logement */}
-    <p className='Title_Lieu'>{MainContentData.location}</p> {/* Affichage de l'emplacement du logement */}
+  return <div className='MainContent_Title'>
+    <h1 className='Title_Title'>{MainContentData.title}</h1> 
+    <p className='Title_Lieu'>{MainContentData.location}</p> 
   </div>
 }
 
