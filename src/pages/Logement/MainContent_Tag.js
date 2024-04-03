@@ -2,17 +2,20 @@ import { useMainContentData } from '../Data/MainContentData'; // Importation de 
 
 function MainContentTag(){
 
-  const MainContentData = useMainContentData(); // Utilisation de la fonction d'importation des données de l'Api
+  // Utilisation de la fonction d'importation des données de l'Api
+  const MainContentData = useMainContentData(); 
   
+  // vérification de nullité des données de l'Api
   if (!MainContentData) {
-    return <div>Loading...</div>; // vérification de nullité des données de l'Api
+    return <div>Loading...</div>; 
   }
 
-  const TagList = (MainContentData["Mots clés"]); // Liste des mots-clés du logement
+  // Récupération des données de la clef "Mots clés" dans l'api (système de array dans un array)
+  const TagList = (MainContentData["Mots clés"]);
     
   return <div className='MainContent_Tag'>
-    <ul className='MainContent_TagList'> {/* Liste des mots-clés */}
-      {/* Parcours et affichage des mots-clés */}
+    <ul className='MainContent_TagList'>
+      {/*On crée une liste avec les données de la clef "mots clés" de l'api*/}
       {TagList.map((item, Tag) => ( 
         <li key={`${item}-${Tag}`} className='TagList_Tag'>{item}</li> 
       ))}
