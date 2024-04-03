@@ -2,31 +2,39 @@ import { useMainContentData } from '../Data/MainContentData'; // Importation de 
 import starEmpty from '../../assets/StarEmpty.png'; // Importation de l'image étoile vide
 import starFull from '../../assets/StarFull.png'; // Importation de l'image étoile pleine
 
+// Création d'une fonction avec la props "note"
 const StarRating = ({ note }) => {
 
-  const stars = []; // Initialisation d'un tableau pour stocker les étoiles
+  // Initialisation d'un array vide pour stocker les étoiles
+  const stars = []; 
   
   for (let i = 0; i < 5; i++) { // i égal à 0, continue tant que i est inférieur à 5, et incrémente i de 1 à chaque itération.
-    if (i < note) { // Si l'indice de l'étoile est inférieur à la note
-      stars.push(<img className='StarNote_Star' key={i} src={starFull} alt="Full Star" />); // Ajoute une étoile pleine au tableau
+    if (i < note) { // on boucle sur note ...
+      // ...Ajoute les étoiles pleine au tableau selon la valeur de note
+      stars.push(<img className='StarNote_Star' key={i} src={starFull} alt="Full Star" />); 
     } else {
-      stars.push(<img className='StarNote_Star' key={i} src={starEmpty} alt="Empty Star" />); // Sinon, ajoute une étoile vide au tableau
+      // ... le reste on ajoute les étoiles vide au tableau (jusqu'à 5 si besoin)
+      stars.push(<img className='StarNote_Star' key={i} src={starEmpty} alt="Empty Star" />);
     }
   }
   
-  return <div>{stars}</div>; // Renvoie les étoiles
+  return <div>{stars}</div>; // Renvoie le array d'étoiles
 };
 
 function MainContentStarNote(){
 
-  const MainContentData = useMainContentData(); // Utilisation de la fonction d'importation des données de l'Api
+  // Utilisation de la fonction d'importation des données de l'Api
+  const MainContentData = useMainContentData(); 
   
+  // vérification de nullité des données de l'Api
   if (!MainContentData) {
-    return <div>Loading...</div>; // vérification de nullité des données de l'Api
+    return <div>Loading...</div>; 
   }
 
   return <div className='MainContent_StarNote'>
-    <StarRating note={MainContentData.note} /> {/* Intégration du composant StarRating avec la note de l'appartement */}
+    {/* Appel de la fonction StarRating pour générer le tableau d'étoiles*/}
+    {/*Avec la props note qui prends la valeur de la clef "note" de l'api */}
+    <StarRating note={MainContentData.note} /> 
   </div>   
 }
 
