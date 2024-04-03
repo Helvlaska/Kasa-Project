@@ -3,17 +3,20 @@ import { useMainContentData } from '../Data/MainContentData'; // Importation de 
 
 function MainContentPeople(){
 
-  const MainContentData = useMainContentData(); // Utilisation de la fonction d'importation des données de l'Api
+  // Utilisation de la fonction d'importation des données de l'Api
+  const MainContentData = useMainContentData(); 
   
+  // vérification de nullité des données de l'Api
   if (!MainContentData) {
-    return <div>Loading...</div>; // vérification de nullité des données de l'Api
+    return <div>Loading...</div>; 
   }
 
-  const peopleInfo = (MainContentData.hôte); // Infos des propriétaires
+  // Récupération des données de la clef "hote" dans l'api (système de array dans un array)
+  const peopleInfo = (MainContentData.hôte); 
 
-  return <div className='MainContent_People'> {/* Bloc pour les informations sur les personnes */}
-    <p className='People_Name'>{peopleInfo.nom}{peopleInfo.name}</p> {/* Nom du propriétaire */}
-    <img src={peopleInfo.photo} alt='Propriétaire' className='People_Picture' /> {/* Photo du propriétaire */}
+  return <div className='MainContent_People'>
+    <p className='People_Name'>{peopleInfo.nom}{peopleInfo.name}</p>
+    <img src={peopleInfo.photo} alt='Propriétaire' className='People_Picture' />
   </div>
 }
 
