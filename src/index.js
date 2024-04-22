@@ -20,7 +20,6 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route path="/kasa-Project" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/Propos" element={<Propos />} />
         <Route path="/Logement/:identifiant" element={<Logement />} />
@@ -30,4 +29,5 @@ root.render(
     </Router>
   </React.StrictMode>
 );
+
 //on dit que sur l'élément HTML 'root' on veut renvoyer notre structure de page

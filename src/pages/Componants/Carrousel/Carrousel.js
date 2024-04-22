@@ -38,4 +38,4 @@ export function Carrousel({ images, initialIndex }) {
   );
 }
   
-  export default Carrousel; // Rend la fonction exportable et réutilisable
+export default Carrousel; // Rend la fonction exportable et réutilisable
